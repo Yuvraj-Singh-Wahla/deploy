@@ -6,4 +6,11 @@ app.get('/',(req,res) => {
     res.send("Welcome to my app");
 });
 
-app.listen(3000);
+app.listen(3000,(err) => {
+    if(err){
+        console.log(err);
+    }
+    else{
+        console.log("Server is up and running");
+    }
+});
